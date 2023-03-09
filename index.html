@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- calc start -->
+    
+    <section class="wrap">
+        
+        <div class="calc">
+    
+            <div class="container calc__container">
+    
+                <form class="calculator" name="calculate">
+                    <input class="value" placeholder="Enter" type="text" name="Calc" readonly-"">
+                    <button type="button" class="num clear main" onclick="document.calculate.text.value =''"><i class="fas fa-c"></i></button>
+                    <button type="button" class="num active" onclick="document.calculate.text.value +='/'"><i class="fas fa-divide"></i></button>
+                    <button type="button" class="num active" onclick="document.calculate.text.value +='*'"><i class="fas fa-xmark"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='7'"><i class="fas fa-7"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='8'"><i class="fas fa-8"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='9'"><i class="fas fa-9"></i></button>
+                    <button type="button" class="num active" onclick="document.calculate.text.value +='-'"><i class="fas fa-minus"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='4'"><i class="fas fa-4"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='5'"><i class="fas fa-5"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='6'"><i class="fas fa-6"></i></button>
+                    <button type="button" class="num plus active" onclick="document.calculate.text.value +='+'"><i class="fas fa-plus"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='3'"><i class="fas fa-3"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='2'"><i class="fas fa-2"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='1'"><i class="fas fa-1"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='0'"><i class="fas fa-0"></i></button>
+                    <button type="button" class="num" onclick="document.calculate.text.value +='00'"><i class="fas fa-0"></i><i class="fas fa-0"></i></button>
+                    <button type="button" class="num active" onclick="document.calculate.text.value +='.'">.</button>
+                    <button type="button" class="num equal main" onclick="document.calculate.text.value =eval(calculate.text.value)"><i class="fas fa-equals"></i></button>
+                </form>
+                
+            </div>
+    
+        </div>
+        
+    </section>
+
+    <!-- calc end -->
+
+
+
+    <!-- footer start -->
+    
+    <footer class="footer">
+
+        <div class="container footer__container">
+
+            <h2 class="footer__title">
+                
+                <a href="#" class="footer__content">
+                    <i class="far fa-copyright fa-flip"></i> Qudratulloh Mahammadjonov | 2022
+                </a>
+                    
+            </h2>
+
+        </div>
+        
+    </footer>
+
+    <!-- footer end -->
+
+</body>
+</html>
